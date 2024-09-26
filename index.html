@@ -106,7 +106,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/ShengYu724/MSGField" target="_blank"
+                    <a href="https://git.ustc.edu.cn/shengyu/msgfiled.git" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -159,26 +159,21 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            An accurate, comprehensive, and efficient scene
-            representation is crucial for robotic manipulation. Existing
-            methods for dynamic scenes either fail to update in real-time
-            or rely on additional pose estimation for simple edits, making
-            it challenging to capture complex motion. To address these
-            challenges, we introduce MSGField, a representation that uses
-            a collection of 2D Gaussians for high-quality reconstruction,
-            further enhanced with attributes encoding both semantic and
-            motion information. We optimize the motion of each primitive
-            in space, decomposing it into a combination of a limited number
-            of motion bases. This approach captures complex motion
-            while maintaining representation compactness. Additionally, we
-            designed a pipeline that leverages object priors to quickly
-            obtain object-centric semantics. Thanks to the compact nature
-            of our representation, we are able to generate semantic fields
-            and capture object motion within seconds. In our challenging
-            dataset, which includes flexible and small objects, our method
-            achieved a success rate of 78.4% in static environments and
-            63.3% in dynamic environments. The code and dataset will be
-            available at: <a href="https://git.ustc.edu.cn/shengyu/msgfiled.git">https://git.ustc.edu.cn/shengyu/msgfiled.git</a>
+            Combining accurate geometry with rich semantics has been proven to be highly effective for 
+            language-guided robotic manipulation.Existing methods for dynamic scenes either 
+            fail to update in real-time or rely on additional depth sensors for simple scene editing, 
+            limiting their applicability in real-world.In this paper, we introduce MSGField, 
+            a representation that uses a collection of 2D Gaussians for high-quality reconstruction, 
+            further enhanced with attributes to encode semantic and motion information. Specially, 
+            we represent the motion field compactly by decomposing each primitive's motion into a 
+            combination of a limited set of motion bases. Leveraging the differentiable real-time 
+            rendering of Gaussian splatting, we can quickly optimize object motion, 
+            even for complex non-rigid motions, with image supervision from only two camera views. 
+            Additionally, we designed a pipeline that utilizes object priors to efficiently 
+            obtain well-defined semantics.In our challenging dataset, which includes flexible 
+            and extremely small objects, our method achieve a success rate of 79.2% in static 
+            and 63.3% in dynamic environments for language-guided manipulation. For specified 
+            object grasping, we achieve a success rate of 90%, on par with point cloud-based methods.
           </p>
         </div>
       </div>
